@@ -8,7 +8,7 @@ body {
 #board-container {
   display: grid;
   grid-template-columns: repeat(50, 6px); /* 50 columns, 6px each */
-  grid-template-rows: repeat(50, 6px);    /* 50 rows, 6px each */
+  grid-template-rows: repeat(50, 6px); /* 50 rows, 6px each */
   gap: 1px;
   background-color: #ccc;
   border: 2px solid #333;
