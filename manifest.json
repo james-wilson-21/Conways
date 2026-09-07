@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Conway's Game of Life",
+  "version": "1.0.0",
+  "description": "An interactive simulation of Conway's Game of Life personal project.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open Game of Life"
+  },
+  "permissions": []
+}
