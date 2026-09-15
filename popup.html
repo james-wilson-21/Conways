@@ -8,7 +8,18 @@
     <h3>Game of Life</h3>
     <!-- The game board will be rendered inside this div -->
     <div id="board-container"></div>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+      <button id="reset-btn">Reset</button>
 
+      <label for="grid-size">Grid Size:</label>
+      <select id="grid-size">
+        <option value="20">20 x 20</option>
+        <option value="40" selected>40 x 40</option>
+        <option value="50">50 x 50</option>
+      </select>
+    </div>
     <!-- Notice type="module". This allows us to use import/export syntax -->
     <script type="module" src="index.js"></script>
   </body>
