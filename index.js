@@ -10,8 +10,10 @@ const startBtn = document.getElementById('start-btn')
 const pauseBtn = document.getElementById('pause-btn')
 const resetBtn = document.getElementById('reset-btn')
 const sizeSelect = document.getElementById('grid-size')
+const boardContainer = document.getElementById('board-container')
 
 let size = 50
+const CELL_SIZE = 12
 const refreshInterval = 100
 
 let board = randomBoard(createBoard(size))
@@ -55,6 +57,12 @@ function resetGame() {
 
 function updateSize(event) {
   size = parseInt(event.target.value, 10)
+
+  boardContainer.style.width = `${size * CELL_SIZE}px`
+  boardContainer.style.height = `${size * CELL_SIZE}px`
+  boardContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+  boardContainer.style.gridTemplateRows = `repeat(${size}, 1fr)`
+
   resetGame()
 }
 
